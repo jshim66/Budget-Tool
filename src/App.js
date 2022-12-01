@@ -1,11 +1,18 @@
 import React from 'react'
 
-const hi = () => {
+import {Brand, Feature, Graph, Navbar} from './components';
+const App = () => {
   return (
-    <div>
-        <h1>hi</h1>
+    <div className = "App">
+        <div className = "gradient__bg">
+            <Navbar />
+        </div>
+        <Brand />
+        <Graph />
+        <Feature />
+
     </div>
   )
 }
 
-export default hi
+export default App
