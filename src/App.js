@@ -1,15 +1,25 @@
 import React from 'react'
 
-import {Brand, Feature, Graph, Navbar} from './components';
+import {Analysis, Brand, Expense , Graph, Navbar} from './components';
+import './app.css';
+
 const App = () => {
   return (
     <div className = "App">
-        <div className = "gradient__bg">
+        <div className = "header-bg">
+            <Brand />
             <Navbar />
         </div>
-        <Brand />
-        <Graph />
-        <Feature />
+        <div className = "tracker-bg">
+            <h1 className = "tracker-title">Tracker</h1>
+            <Expense />
+        </div>
+        <div className='analysis-bg'>
+            <Analysis />
+            <Graph />
+        </div>
+        
+        
 
     </div>
   )

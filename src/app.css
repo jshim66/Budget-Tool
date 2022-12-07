@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+.App{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+
+.header-bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    width: 20vh;
+}
+
+.tracker-title{
+    text-align: left;
+    padding: 1rem 2rem;
+    padding-bottom: 60px;
+    font-size: 50px;
+}
+
+hr.dotted {
+    border-top: 1px dotted black;
+  }
+
+.tracker-bg {
+    display: flex;
+
+    flex-direction: column;
+    background-color: rgb(53, 52, 52);
+    height: 100vh;
+    width: 100vh;
+}
+
+.analysis-bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(82, 82, 82);
+    height: 100vh;
+    width: 100vw;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+
+@media screen and (max-width: 700px){
+    .section__padding {
+        padding: 4rem;
+    }
+    .section__margin {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 550){
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+    .section__margin {
+        margin: 4rem 2 rem;
+    }
+}

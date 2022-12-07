@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.layout {
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+} 
+.input_area {
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    padding: 1rem 1rem;
+    
+
+} 
+
+.dropdown-menu {
+    height: 100px;
+    overflow-y: scroll;
+    font-size: 14px;
+  }
+
+.item_box {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(103, 103, 103);
+    width: 20vh;
+    height: 37px;
+
+
+}
+.amount_box {
+    outline: none;
+    border: none;
+    background-color: rgb(103, 103, 103);
+    width: 10vh;
+    height: 37px;
+}
+
+.trash{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+}
+
+.e_list{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.e_list_elements {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+}
+
+.e_list p {
+    display: table-cell;
+    text-align: left;
+}
