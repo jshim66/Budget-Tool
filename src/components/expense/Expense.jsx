@@ -48,25 +48,21 @@ const Expense = () => {
 
   const addExpense = (userInput) => {
     alert(userInput.type);
-    /*
-    if(userInput.type == ''){
-      alert('hi');
-    }
-    if(userInput.type || userInput.detail || userInput.amount == ''){
+    
+
+    if(userInput.type == '' || userInput.detail == '' || userInput.amount == ''){
       alert('error');
     }
-    
-    
-    */
-    //else{
+      
+    else{
       let copy = [...expense];
     
       copy = [...copy, { id: expense.length + 1, type: userInput.type , detail: userInput.detail, amount: userInput.amount}];
       setExpense(copy);
       //alert(expense[0])
-      setUserInput({type: '', detail: '', amount: ''});
+      setUserInput({type: userInput.type, detail: '', amount: ''});
       //alert(JSON.stringify(expense));
-    //}
+    }
       
     
    
